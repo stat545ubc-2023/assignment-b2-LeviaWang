@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# countByGeneral
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The `countByGeneral` package provides a flexible way to group and summarize data in R. It is particularly useful when dealing with categorical data where entries may include commas or when summarizing date fields by year.
+
+## Description
+
+The main function `count_by_general()` groups data by one or more specified categorical variables and returns a summary tibble. For each specified column, only the part before any comma is kept. If a date column is specified, only the year part of the date is used.
+
+## Installation
+
+You can install the development version of `countByGeneral` from GitHub with:
+
+```{r}
+# install.packages("devtools")
+devtools::install_github("https://github.com/stat545ubc-2023/countByGeneral.git")
+```
+
+## Examples
+
+Using the steam_games dataset for the data parameter.
+
+Here will show how the function works when only one categorical variable(genre) is used for the parameter column_names.
+
+```{r example}
+library(countByGeneral)
+library(datateachr)
+summary_result <- count_by_general(steam_games, "genre")
+summary_result
+```
+
+The function also works when column_names is a character vector containing the names of two categorical grouping variables (genre, languages).
+
+```{r example 2}
+library(countByGeneral)
+library(datateachr)
+summary_result <- count_by_general(steam_games, c("genre", "languages"))
+summary_result
+
+```
+
