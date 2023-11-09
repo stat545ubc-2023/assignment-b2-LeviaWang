@@ -25,52 +25,10 @@ with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("https://github.com/stat545ubc-2023/countByGeneral.git")
+devtools::install_github("https://github.com/stat545ubc-2023/countByGeneral.git", upgrade = "never", force = TRUE)
 #> Downloading GitHub repo stat545ubc-2023/countByGeneral@HEAD
-#> utf8        (1.2.3 -> 1.2.4) [CRAN]
-#> withr       (2.5.1 -> 2.5.2) [CRAN]
-#> fansi       (1.0.4 -> 1.0.5) [CRAN]
-#> vctrs       (0.6.3 -> 0.6.4) [CRAN]
-#> rlang       (1.1.1 -> 1.1.2) [CRAN]
-#> lifecycle   (1.0.3 -> 1.0.4) [CRAN]
-#> curl        (5.0.2 -> 5.1.0) [CRAN]
-#> tinytex     (0.46  -> 0.48 ) [CRAN]
-#> htmltools   (0.5.6 -> 0.5.7) [CRAN]
-#> xfun        (0.40  -> 0.41 ) [CRAN]
-#> evaluate    (0.21  -> 0.23 ) [CRAN]
-#> knitr       (1.44  -> 1.45 ) [CRAN]
-#> vroom       (1.6.3 -> 1.6.4) [CRAN]
-#> textshaping (0.3.6 -> 0.3.7) [CRAN]
-#> systemfonts (1.0.4 -> 1.0.5) [CRAN]
-#> ragg        (1.2.5 -> 1.2.6) [CRAN]
-#> lubridate   (1.9.2 -> 1.9.3) [CRAN]
-#> ggplot2     (3.4.3 -> 3.4.4) [CRAN]
-#> Installing 18 packages: utf8, withr, fansi, vctrs, rlang, lifecycle, curl, tinytex, htmltools, xfun, evaluate, knitr, vroom, textshaping, systemfonts, ragg, lubridate, ggplot2
-#> Installing packages into 'C:/Users/User/AppData/Local/Temp/RtmpKyQfxL/temp_libpathe841a583d70'
-#> (as 'lib' is unspecified)
-#> package 'utf8' successfully unpacked and MD5 sums checked
-#> package 'withr' successfully unpacked and MD5 sums checked
-#> package 'fansi' successfully unpacked and MD5 sums checked
-#> package 'vctrs' successfully unpacked and MD5 sums checked
-#> package 'rlang' successfully unpacked and MD5 sums checked
-#> package 'lifecycle' successfully unpacked and MD5 sums checked
-#> package 'curl' successfully unpacked and MD5 sums checked
-#> package 'tinytex' successfully unpacked and MD5 sums checked
-#> package 'htmltools' successfully unpacked and MD5 sums checked
-#> package 'xfun' successfully unpacked and MD5 sums checked
-#> package 'evaluate' successfully unpacked and MD5 sums checked
-#> package 'knitr' successfully unpacked and MD5 sums checked
-#> package 'vroom' successfully unpacked and MD5 sums checked
-#> package 'textshaping' successfully unpacked and MD5 sums checked
-#> package 'systemfonts' successfully unpacked and MD5 sums checked
-#> package 'ragg' successfully unpacked and MD5 sums checked
-#> package 'lubridate' successfully unpacked and MD5 sums checked
-#> package 'ggplot2' successfully unpacked and MD5 sums checked
-#> 
-#> The downloaded binary packages are in
-#>  C:\Users\User\AppData\Local\Temp\Rtmpm0GUmU\downloaded_packages
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>          checking for file 'C:\Users\User\AppData\Local\Temp\Rtmpm0GUmU\remotes7df4508562cc\stat545ubc-2023-countByGeneral-f7c313b/DESCRIPTION' ...  ✔  checking for file 'C:\Users\User\AppData\Local\Temp\Rtmpm0GUmU\remotes7df4508562cc\stat545ubc-2023-countByGeneral-f7c313b/DESCRIPTION'
+#>       ✔  checking for file 'C:\Users\User\AppData\Local\Temp\RtmpCmvnuF\remotes80501fe81a08\stat545ubc-2023-countByGeneral-cce47b3/DESCRIPTION'
 #>       ─  preparing 'countByGeneral':
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
 #>       ─  checking for LF line-endings in source and make files and shell scripts
@@ -79,7 +37,7 @@ devtools::install_github("https://github.com/stat545ubc-2023/countByGeneral.git"
 #>       ─  building 'countByGeneral_0.1.0.tar.gz'
 #>      
 #> 
-#> Installing package into 'C:/Users/User/AppData/Local/Temp/RtmpKyQfxL/temp_libpathe841a583d70'
+#> Installing package into 'C:/Users/User/AppData/Local/Temp/RtmpKyQfxL/temp_libpathe848914744'
 #> (as 'lib' is unspecified)
 ```
 

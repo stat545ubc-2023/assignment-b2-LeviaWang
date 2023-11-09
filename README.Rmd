@@ -30,7 +30,7 @@ You can install the development version of `countByGeneral` from GitHub with:
 
 ```{r}
 # install.packages("devtools")
-devtools::install_github("https://github.com/stat545ubc-2023/countByGeneral.git")
+devtools::install_github("https://github.com/stat545ubc-2023/countByGeneral.git", upgrade = "never", force = TRUE)
 ```
 
 ## Examples
