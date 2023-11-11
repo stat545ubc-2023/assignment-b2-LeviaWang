@@ -8,5 +8,4 @@
 
 library(testthat)
 library(countByGeneral)
-library(datateachr)
 test_check("countByGeneral")

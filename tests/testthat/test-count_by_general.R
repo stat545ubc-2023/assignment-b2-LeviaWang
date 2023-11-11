@@ -1,4 +1,10 @@
-#If make data is null, the function should give error message.
+
+steam_games <- data.frame(
+  genre = c("Action,Adventure", "Strategy,Simulation", "RPG,Indie"),
+  release_date = c("May 12, 2016", "June 15, 2017", "April 30, 2018"),
+  languages = c("English, Spanish", "French, German", "Japanese, Korean"),
+  stringsAsFactors = FALSE
+)
 test_that("Function handles empty data correctly", {
   empty <-tibble(data.frame())
   expect_error(count_by_general(empty, c("genre"), date = "release_date"),
