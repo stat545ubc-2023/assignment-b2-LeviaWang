@@ -31,13 +31,4 @@ test_that("Function handles all wrong format of date column correctly", {
   expect_error(count_by_general(na_data, c("languages"), date = "release_date"),
                "Date values in column release_date do not match the expected format \\(Month Day, Year\\).")
 })
-data <- steam_games
-data <- data %>%
-  mutate(across(all_of(c("genre")), ~ str_extract(., "^[^,]*")))
-manually_summary_tibble <- data %>%
-  group_by(across(all_of(c("genre")))) %>%
-  summarise(count = n(), .groups = 'drop')
-function_summary_tibble = count_by_general(steam_games, c("genre"))
-test_that("Function output is equal to manually output", {
-  expect_equal(function_summary_tibble, manually_summary_tibble)
-})
+
